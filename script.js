@@ -114,7 +114,15 @@ buttonOfCalc.addEventListener('click', () => {
 })
 
 
-
-
-
-
+// Calc Live
+// Сделайте расчет живым, т.е.обновляющимся по событию oninput
+// каждого поля ввода, влияющего на результат.Нет смысла копировать
+// одну и ту же калькуляцию, поэтому вначале задекларируйте функцию расчета, а
+// потом присвойте её в качестве обработчика события в каждом поле ввода
+ 
+function myCalculator(){
+    var firstInput = document.getElementById("firstNumberInput").value;
+    var secondInput = document.getElementById("secondNumberInput").value;
+    var x = +firstInput + +secondInput;
+    document.getElementById("resultSecond").innerHTML = "Your result of sum is:" + x;
+}
