@@ -70,11 +70,47 @@ overOutTD.forEach((item, i) => {
         item.parentNode.style.backgroundColor = '';
     }
 })
-let overOutTR = document.querySelectorAll('tr');
+/*let overOutTR = document.querySelectorAll('tr');
 
 overOutTR.forEach((item, i) => {
     let tableCell = item.querySelector('td');
     if (tableCell )
+})*/
+
+
+//Сделайте ваш калькулятор из первых занятий 
+//используя DOM и элементы input(в т.ч.type = "number" для чисел) 
+//Каждому полю ввода присвойте тот или иной id для обращения в 
+//обрабочтике события.
+ 
+let firstNumberInput = document.querySelector('#firstValue'),
+    secondNumberInput = document.querySelector('#secondValue'),
+    plus = document.querySelector('#plus'),
+    minus = document.querySelector('#minus'),
+    multiplication = document.querySelector('#multiply'),
+    divider = document.querySelector('#divide'),
+    degree = document.querySelector('#squareCube'),
+    resOfCalc = document.querySelector('#result'),
+    buttonOfCalc = document.querySelector('.btn');
+
+buttonOfCalc.addEventListener('click', () => {
+    if(plus.checked){
+        resOfCalc.value = +firstNumberInput.value + +secondNumberInput.value;
+    } else 
+    if (minus.checked){
+        resOfCalc.value = firstNumberInput.value - secondNumberInput.value;
+    } else
+    if (multiplication.checked){
+        resOfCalc.value = firstNumberInput.value * secondNumberInput.value;
+    } else 
+    if (divider.checked){
+        resOfCalc.value = firstNumberInput.value / secondNumberInput.value;
+    } else
+    if (degree.checked){
+        resOfCalc.value = firstNumberInput.value ** secondNumberInput.value;
+    } else {
+        alert('Choose math operation');
+    }
 })
 
 

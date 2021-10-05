@@ -14,19 +14,47 @@
 <body>
     <div class="wrapper">
         <header class="header">
-            
+
 
         </header>
         <main class="main">
             <div class="container">
                 <table class="multiplication">
                 </table>
-                    
-                
+            </div>
+            <div class="container">
+                <div class="calculator">
+                    <input type="number" id="firstValue" placeholder="Write some number">
+                    <input type="number" id="secondValue" placeholder="Write another number">
+                    <div class="math_operation">
+                        <div class="plus_operation">
+                            <input type="radio" id="plus" name="type">
+                            <label for="plus"> + </label>
+                        </div>
+                        <div class="minus_operation">
+                            <input type="radio" id="minus" name="type">
+                            <label for="minus"> - </label>
+                        </div>
+                        <div class="multiply_operation">
+                            <input type="radio" id="multiply" name="type">
+                            <label for="multiply">*</label>
+                        </div>
+                        <div class="divide_operation">
+                            <input type="radio" id="divide" name="type">
+                            <label for="divide">/</label>
+                        </div>
+                        <div class="squareCube_operation">
+                            <input type="radio" id="squareCube" name="type">
+                            <label for="squareCube">^^</label>
+                        </div>
+                    </div>
+                    <input type="number" id="result" placeholder="Result">
+                    <button class="btn" id="calc">Calculate</button>
+                </div>
             </div>
         </main>
         <footer class="footer">
-            
+
         </footer>
     </div>
     <script src="script.js"> </script>

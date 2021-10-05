@@ -26,3 +26,28 @@ a{
     margin: 0 auto;
     padding: 0px 15px;
 }
+.calculator{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    align-items: center;
+
+}
+.calculator input{
+    margin-bottom: 10px;
+    width: 100%;
+}
+.calculator button{
+    width: 100px;
+}
+.math_operation{
+    display: flex;
+    flex-direction: row;
+}
+.plus_operation, .minus_operation, .multiply_operation, .divide_operation, .squareCube_operation{
+    display: flex;
+    flex-direction: row;
+    width: 50px;
+    vertical-align: middle;
+}
